@@ -1,0 +1,42 @@
+.video-container {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%;
+  overflow: hidden;
+}
+
+.video-container video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.video-container img {
+  position: absolute;
+  right: 0;
+  top: 150px;
+  width: 8rem;
+  opacity: .7;
+}
+
+@media (max-width:720px) {
+  .video-container img {
+    position: absolute;
+    right: 0;
+    top: 100px;
+    width: 4rem;
+    opacity: .7;
+  }
+}
+
+@media (max-width:500px) {
+  .video-container img {
+    position: absolute;
+    right: 0;
+    top: 80px;
+    width: 3rem;
+    opacity: .7;
+  }
+}

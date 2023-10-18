@@ -1,0 +1,41 @@
+.table-container {
+    overflow-x: auto;
+}
+
+.user-table {
+    padding: 10px;
+    width: 100%;
+    border-collapse: collapse;
+}
+.user-table .view-bt{
+    border: none;
+    color: #3ac11cea;
+    font-size: 25px;
+}
+
+.user-table th  {
+    border: 1px solid #ccc;
+    background-color:#1b5a8d ;
+    font-size: 20px;
+    color: #ffff;
+    padding: 8px;
+    text-align: left;
+}
+.user-table td{
+    border: 1px solid #ccc;
+    font-size:18px;
+    padding: 8px;
+    text-align: left; 
+}
+
+@media (max-width: 780px) {
+    .user-table th, .user-table td {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 400px) {
+    .user-table th, .user-table td {
+        font-size: 10px;
+    }
+}

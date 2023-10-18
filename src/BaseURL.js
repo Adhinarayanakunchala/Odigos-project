@@ -1,0 +1,1 @@
+export const BaseUrl="https://xapi.odigos.org/api";

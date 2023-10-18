@@ -1,0 +1,48 @@
+.homepage-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+  }
+  
+  .user-icon {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .user-icon .user-btn {
+    background: none;
+    padding:10px 20px;
+    font-size: 25px;
+    color: #deb887;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+  }
+  .user-icon .logout-btn {
+    background: none;
+    padding:10px 20px;
+    font-size: 25px;
+    color: #deb887;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .user-btn:focus {
+    outline: none;
+  }
+  
+  .username {
+    margin-left: 8px;
+  }
+  
+  
+  @media (max-width: 768px) {
+    .homepage-container {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+  
