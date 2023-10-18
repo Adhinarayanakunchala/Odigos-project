@@ -51,9 +51,9 @@ const Login = () => {
   
   const SubmitHandler = async (e) => {
     e.preventDefault();
-
-    if (mobileNumber.length !== 10) {
-      setMessage('Mobile number must be 10 digits.');
+    
+ if (!/^[6-9]\d{9}$/.test(mobileNumber)) {
+      setMessage('Invalid mobile number');
       return;
     }
     try {
@@ -95,8 +95,8 @@ const Login = () => {
   const handleOtpSubmit = async (e) => {
     e.preventDefault();
 
-    if (otp.length !== 4) {
-      setMessage('OTP must be 4 digits.');
+   if (!/^\d{4}$/.test(otp)) {
+      setMessage('Invalid OTP');
       return;
     }
   try{
